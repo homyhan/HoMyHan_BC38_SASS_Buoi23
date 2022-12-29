@@ -1,0 +1,32 @@
+@import './variable';
+
+@mixin button($bg, $pd, $br, $bc, $w){
+    background-color: $bg;
+    padding: $pd;
+    border-radius: $br;
+    border-color: $bc;
+    width: $w;
+  }
+  @mixin typeText($ta, $fs, $c){
+    text-align: $ta;
+    font-size: $fs;
+    color: $c;
+  }
+  
+  @mixin size($w, $h){
+    width: $w;
+    height: $h;
+  }
+  
+  @mixin location($position, $top, $left){
+    position: $position;
+    top: $top;
+    left: $left;
+  }
+  
+  @mixin bgImg($url, $bg-size, $bg-repeat){
+    background-image: $url;
+    background-size: $bg-size;
+    background-repeat: $bg-repeat;
+  
+  }
